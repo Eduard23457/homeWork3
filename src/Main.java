@@ -79,7 +79,7 @@ public class Main {
         int botlMonth = botlThree * 10;
         System.out.println("Производится " + botlMonth + " штук за месяц");
 
-        //Задача 5
+        //Задача  5
         int X = 120;
         byte C = 2;
         short V = 4;

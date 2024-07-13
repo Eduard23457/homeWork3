@@ -7,22 +7,22 @@ public class Main {
 
         //Задача 1
         int a = 35000;
-        System.out.println(a);
+        System.out.println("Значение переменой а типа int равно " + a);
 
         byte b = 5;
-        System.out.println(b);
+        System.out.println("Значение переменой b типа byte равно " + b);
 
         short c = 30000;
-        System.out.println(c);
+        System.out.println("Значение переменой c типа short равно " + c);
 
-        long d = 1000000000;
-        System.out.println(d);
+        long d = 1000000000L;
+        System.out.println("Значение переменой d типа long равно " + d);
 
         float g =(float) 10.5555555f;
-        System.out.println(g);
+        System.out.println("Значение переменой g типа float равно " + g);
 
-        double h = 3.3555555555555555;
-        System.out.println(h);
+        double h = 3.3555555555555555d;
+        System.out.println("Значение переменой h типа double равно " + h);
 
         //Задача 2
         float n =(float) 3.75f;
@@ -30,10 +30,10 @@ public class Main {
 
         long q = 987678965549L;
 
-        float m =(float) 2.786;
+        double m = 2.786;
         System.out.println(m);
 
-        short r = 569;
+        int r = 569;
         System.out.println(r);
 
         short t = - 159;
@@ -65,18 +65,16 @@ public class Main {
         System.out.println("Бутылок производится " + workOne + " штук за 1 минуту");
 
         int botlTwentyMinutes = 20;
-        int timeTwenty = botlTwentyMinutes * botlTwoMinutes;
+        int timeTwenty = botlTwentyMinutes * workOne;
         System.out.println("Столько производится " + timeTwenty + " штук за 20 минут");
 
-        int botl = timeTwenty * 3;
-        System.out.println("Производится " + botl + " бутылок за 1 час");
-        int botlDay = timeTwenty * 24;
+        int botlDay = workOne * 1440;
         System.out.println("Производится "+ botlDay + " штук за день");
 
         int botlThree = botlDay * 3;
         System.out.println("Производится " + botlThree + " штук за 3 дня");
 
-        int botlMonth = botlThree * 10;
+        int botlMonth = botlDay * 31;
         System.out.println("Производится " + botlMonth + " штук за месяц");
 
         //Задача  5
@@ -89,8 +87,9 @@ public class Main {
         int N = X / B;
         System.out.println("Узнали, что " + N + " классов в школе");
         int M = N * V;
-        System.out.println(M + " штук коричневой краски");
-        int J = X - M;
+        System.out.println(M + " банок коричневой краски");
+        int J = N * C;
+        System.out.println(J + " банок белой краски");
         System.out.println("В школе, где " + N + " классов, нужно " + J + " банок белой краски и " + M + " банок коричневой краски");
 
         //Задача 6
